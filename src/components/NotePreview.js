@@ -1,13 +1,23 @@
 import React from 'react'
+import { useSelector, useDispatch } from 'react-redux'
+import { add } from '../slices/noteSlice'
+import { Icon } from '@iconify/react';
 import { NotePreviewCard } from './NotePreviewCard'
 
 export const NotePreview = () => {
+    const noteList = useSelector((state) => state.notes.noteList);
+    const dispatch = useDispatch();
+
     return (
         <div className='note-preview'>
-            <NotePreviewCard title='Shopping List' note='Kartoffeln, Paprika, Olivenöl' />
-            <NotePreviewCard title='Shopping List' note='Kartoffeln, Paprika, Olivenöl' />
-            <button className='add-note-btn'>
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M11 13H5v-2h6V5h2v6h6v2h-6v6h-2z" /></svg>
+            {noteList.map((note) => (
+                <NotePreviewCard key={note.id} id={note.id} title={note.title} content={note.content} />
+            ))}
+            <button
+                className='add-note-btn'
+                onClick={() => dispatch(add())}
+            >
+                <Icon icon="material-symbols:add" />
             </button>
         </div>
     )
