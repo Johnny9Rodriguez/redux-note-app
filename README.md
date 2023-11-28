@@ -1,9 +1,17 @@
-# Redux note-taking app.
+https://johnny9rodriguez.github.io/redux-note-app/
 
-A simple note-taking application using **React** and **Redux**. The application allows users to:
+# Redux Note Taking App
 
-1. Add a new note with a title and content.
-2. View a list of existing notes.
-3. Edit the title and content of a note.
-4. Delete a note.
+A simple note-taking application for learning state management with Redux in React.
 
+## Features
+
+- Add a new note with a title and content.
+- View a list of existing notes.
+- Edit the title and content of a note.
+- Delete a note.
+
+## Technologies Used
+
+- React
+- Redux
