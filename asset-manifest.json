@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/redux-note-app/static/css/main.98f89059.css",
+    "main.js": "/redux-note-app/static/js/main.f8df6664.js",
+    "index.html": "/redux-note-app/index.html",
+    "main.98f89059.css.map": "/redux-note-app/static/css/main.98f89059.css.map",
+    "main.f8df6664.js.map": "/redux-note-app/static/js/main.f8df6664.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.98f89059.css",
+    "static/js/main.f8df6664.js"
+  ]
+}
